@@ -8,12 +8,12 @@ variables:
   PRE_IMAGE_TAG_NAME: ${HARBOR_HOST}/${HARBOR_PROJECT}/${CI_PROJECT_NAME}
 
   # For docker image build
-  APPLICATION_NAME: reac-backend
+  APPLICATION_NAME: reac-security
   BUILD_CONTEXT: /
   IMAGE_TAG_NAME: ${PRE_IMAGE_TAG_NAME}/${APPLICATION_NAME}:${CI_COMMIT_SHORT_SHA}-${CI_COMMIT_BRANCH}
 
   # For gitops deployment
-  FILE_PATH: applications/${APPLICATION_NAME}/environments/${ENVIRONMENT}/deployment.yaml
+  FILE_PATH: applications/reac/security/environments/${ENVIRONMENT}/deployment.yaml
   TAG: "$IMAGE_TAG_NAME"
   TAG_PATH: .spec.template.spec.containers[0].image
 
