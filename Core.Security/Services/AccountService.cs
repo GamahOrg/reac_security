@@ -18,7 +18,7 @@ namespace Core.Security.Services
             _jwtProvider = jwtProvider;
         }
 
-        public async Task<BaseResponse> LoginAsync(UserLoginDto userLogin, CancellationToken cancellationToken)
+        public async Task<DataResponse<TokenModel>> LoginAsync(UserLoginDto userLogin, CancellationToken cancellationToken)
         {
             if (!string.IsNullOrWhiteSpace(userLogin.UserName))
             {
@@ -44,17 +44,17 @@ namespace Core.Security.Services
                         }
                         else
                         {
-                            return new DataResponse<TokenModel> { IsDone = false, Data = null, Message = "اسم المستخدم خطأ او الرقم السري" };
+                            return new DataResponse<TokenModel> { IsDone = false, Data = null, Message = "خطأ فى رقم الهوية" };
                         }
                     }
                     else
                     {
-                        return new DataResponse<TokenModel> { IsDone = false, Data = null, Message = "اسم المستخدم خطأ او الرقم السري" };
+                        return new DataResponse<TokenModel> { IsDone = false, Data = null, Message = "خطأ فى رقم الهوية" };
                     }
                 }
                 else
                 {
-                    return new DataResponse<TokenModel> { IsDone = false, Data = null, Message = "اسم المستخدم خطأ او الرقم السري" };
+                    return new DataResponse<TokenModel> { IsDone = false, Data = null, Message = "خطأ فى رقم الهوية" };
                 }
 
             }

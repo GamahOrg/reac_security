@@ -5,8 +5,13 @@
         /// <summary>
         /// الدور الاساسي
         /// </summary>
+
+        public const string Delegator = "Delegator";
+        public const string Citizen = "Citizen";
+
         public const string Basic = "Basic";
         public const string Account = "Account";
+
         public const string WorkFlow = "WorkFlow";
         public const string WorkFlowNotification = "WorkFlowNotification";
         public const string DelegationRequest = "DelegationRequest";
@@ -16,6 +21,19 @@
         public const string WorkFlowStep = "WorkFlowStep";
         public const string FacilityDelegator = "FacilityDelegator";
         public const string LitigationRequest = "LitigationRequest";
+        public const string Reconciliation = "Reconciliation";
+        public const string LitigationRequestReformerAssigningRequest = "LitigationRequestReformerAssigningRequest";
+        public const string LitigationRequestArbitratorAssigningRequest = "LitigationRequestArbitratorAssigningRequest";
+        public const string MeetingLocation = "MeetingLocation";
+
+        public const string ArbitratorCount = "ArbitratorCount";
+        public const string Bank = "Bank";
+
+        public const string ArbitratorNominationListCount = "ArbitratorNominationListCount";
+        public const string ArbitrationSession = "ArbitrationSession";
+
+
+        public const string Arbitration = "Arbitration";
         public const string LitigationRequestContract = "LitigationRequestContract";
         public const string LitigationRequestCorrespondence = "LitigationRequestCorrespondence";
         public const string LitigationRequestCorrespondenceFile = "LitigationRequestCorrespondenceFile";
@@ -45,13 +63,15 @@
         public const string LitigationRequestMeetingDecision = "LitigationRequestMeetingDecision";
         public const string LitigationRequestOwnerType = "LitigationRequestOwnerType";
         public const string LitigationRequestStatus = "LitigationRequestStatus";
+        public const string CitizenRequestStatus = "CitizenRequestStatus";
+
         public const string RegistrationRequest = "RegistrationRequest";
         public const string Setting = "Setting";
         public const string VacationRequest = "VacationRequest";
         public const string ArbitratorClass = "ArbitratorClass";
         public const string Area = "Area";
         public const string City = "City";
-
+        public const string OtherCategory = "OtherCategory";
 
 
     }

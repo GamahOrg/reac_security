@@ -4936,6 +4936,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "Core >= 1.0.0",
       "Core.Security >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 8.0.2",
       "Microsoft.EntityFrameworkCore.Design >= 8.0.2",
@@ -4978,6 +4979,9 @@
           "projectReferences": {
             "C:\\Users\\admin\\source\\repos\\Security\\Core.Security\\Core.Security.csproj": {
               "projectPath": "C:\\Users\\admin\\source\\repos\\Security\\Core.Security\\Core.Security.csproj"
+            },
+            "C:\\Users\\admin\\source\\repos\\Security\\Core\\Core.csproj": {
+              "projectPath": "C:\\Users\\admin\\source\\repos\\Security\\Core\\Core.csproj"
             }
           }
         }

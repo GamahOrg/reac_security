@@ -35,6 +35,9 @@
             "projectReferences": {
               "C:\\Users\\admin\\source\\repos\\Security\\Core.Security\\Core.Security.csproj": {
                 "projectPath": "C:\\Users\\admin\\source\\repos\\Security\\Core.Security\\Core.Security.csproj"
+              },
+              "C:\\Users\\admin\\source\\repos\\Security\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\admin\\source\\repos\\Security\\Core\\Core.csproj"
               }
             }
           }
