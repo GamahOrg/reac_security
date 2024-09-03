@@ -9,14 +9,14 @@ WORKDIR /api
 
 COPY . .
 
-RUN dotnet build "./Core.Security.Api/Core.Security.Api.csproj" -c $BUILD_CONFIGURATION -o /app/build
+RUN dotnet build "./REAC.Api/REAC.Api.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
 
-RUN dotnet publish "./Core.Security.Api/Core.Security.Api.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "./REAC.Api/REAC.Api.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "Core.Security.Api.dll"]
+ENTRYPOINT ["dotnet", "REAC.Api.dll"]
